@@ -1,0 +1,163 @@
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+body{
+
+font-family:Arial,sans-serif;
+
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("images/stadium.jpeg");
+
+background-size:cover;
+
+background-position:center;
+
+padding:40px;
+
+text-align:center;
+
+color:white;
+
+}
+
+h1{
+
+color:gold;
+
+margin-bottom:40px;
+
+}
+
+.quotes{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.quote{
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(10px);
+
+padding:30px;
+
+margin:20px 0;
+
+border-left:6px solid gold;
+
+border-radius:15px;
+
+font-size:22px;
+
+font-style:italic;
+
+transition:.3s;
+
+}
+
+.quote:hover{
+
+transform:translateX(10px);
+
+background:gold;
+
+color:black;
+
+}
+
+.back{
+
+display:inline-block;
+
+margin-top:40px;
+
+padding:15px 30px;
+
+background:gold;
+
+color:black;
+
+text-decoration:none;
+
+border-radius:10px;
+
+font-weight:bold;
+
+}
+
+
+.quote h2{
+
+font-size:24px;
+
+margin-bottom:15px;
+
+font-style:italic;
+
+}
+
+.quote p{
+
+color:gold;
+
+font-weight:bold;
+
+font-size:18px;
+
+}
+
+/* ================= MOBILE ================= */
+
+@media screen and (max-width:768px){
+
+body{
+    padding:20px;
+}
+
+h1{
+    font-size:30px;
+    margin-bottom:25px;
+    line-height:1.4;
+}
+
+.quotes{
+    width:100%;
+}
+
+.quote{
+    padding:20px;
+    margin:15px 0;
+    border-left:4px solid gold;
+}
+
+.quote h2{
+    font-size:20px;
+    line-height:1.6;
+}
+
+.quote p{
+    font-size:16px;
+}
+
+.quote:hover{
+    transform:none;
+}
+
+.back{
+    display:block;
+    width:100%;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+
+}

@@ -1,0 +1,178 @@
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+body{
+
+font-family:Arial;
+
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("images/stadium.jpeg");
+
+background-size:cover;
+
+background-position:center;
+
+text-align:center;
+
+color:white;
+
+padding:40px;
+
+}
+
+h1{
+
+color:gold;
+
+margin-bottom:50px;
+
+}
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:30px;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.box{
+
+background:rgba(255,255,255,.12);
+
+padding:40px;
+
+border-radius:20px;
+
+backdrop-filter:blur(10px);
+
+transition:.3s;
+
+}
+
+.box:hover{
+
+transform:scale(1.05);
+
+background:gold;
+
+color:black;
+
+}
+
+.box h2{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+}
+
+.box h3{
+
+margin-bottom:15px;
+
+}
+
+.box p{
+
+font-size:30px;
+
+font-weight:bold;
+
+}
+
+.back{
+
+display:inline-block;
+
+margin-top:50px;
+
+padding:15px 30px;
+
+background:gold;
+
+color:black;
+
+text-decoration:none;
+
+border-radius:10px;
+
+font-weight:bold;
+
+}
+
+.stat-img{
+
+width:100%;
+
+height:180px;
+
+object-fit:fill;
+
+border-radius:15px;
+
+border:2px solid gold;
+
+margin-bottom:20px;
+
+}
+
+/* ================= MOBILE ================= */
+
+@media screen and (max-width:768px){
+
+body{
+    padding:20px;
+}
+
+h1{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+.stats{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.box{
+    padding:25px 20px;
+}
+
+.stat-img{
+    height:200px;
+}
+
+.box h3{
+    font-size:22px;
+    line-height:1.4;
+}
+
+.box p{
+    font-size:24px;
+}
+
+.back{
+    display:block;
+    width:100%;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+
+}
