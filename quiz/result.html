@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Result</title>
+
+<link rel="stylesheet" href="result.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>❌GAME OVER❌</h1>
+
+<h2 id="player"></h2>
+
+<h3 id="score"></h3>
+
+<h3 id="rank"></h3>
+
+<button onclick="playAgain()">
+
+▶ PLAY AGAIN
+
+</button>
+
+<button onclick="leaderboard()">
+📊 LEADERBOARD 
+</button>
+
+<button onclick="goHome()">
+
+⬅ BACK TO HOME
+
+</button>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+<script src="firebase.js"></script>
+<script src="result.js"></script>
+
+</body>
+
+</html>

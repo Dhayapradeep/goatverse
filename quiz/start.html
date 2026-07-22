@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CR7 Trivia</title>
+
+    <link rel="stylesheet" href="start.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🏆 FIFA TRIVIA</h1>
+
+    <p id="welcome"></p>
+
+    <div id="nameSection">
+
+        <input
+        type="text"
+        id="playerName"
+        placeholder="Enter Your Name">
+
+        <button onclick="saveName()">
+            CONTINUE
+        </button>
+
+    </div>
+
+    <div id="startSection" style="display:none;">
+
+        <button onclick="startQuiz()">
+            ▶ START QUIZ
+        </button>
+
+        <button onclick="changeName()">
+            ✏ CHANGE NAME
+        </button>
+
+    </div>
+
+    <br>
+
+    <a href="../index.html" class="back">
+        ⬅ Back to Home
+    </a>
+
+</div>
+
+<script src="start.js"></script>
+
+</body>
+
+</html>

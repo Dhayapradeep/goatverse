@@ -1,0 +1,123 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url("../images/stadium.jpeg");
+
+background-size:cover;
+background-position:center;
+
+}
+
+.container{
+
+width:500px;
+
+padding:40px;
+
+background:rgba(255,255,255,.1);
+
+backdrop-filter:blur(12px);
+
+border:2px solid gold;
+
+border-radius:20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+h1{
+
+color:gold;
+
+margin-bottom:30px;
+
+}
+
+h2,h3{
+
+margin:15px 0;
+
+}
+
+button{
+
+width:100%;
+
+padding:15px;
+
+margin-top:15px;
+
+border:none;
+
+border-radius:10px;
+
+background:gold;
+
+font-size:18px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:white;
+
+}
+
+/* ================= MOBILE ================= */
+
+@media screen and (max-width:768px){
+
+body{
+    padding:20px;
+    height:auto;
+    min-height:100vh;
+}
+
+.container{
+    width:100%;
+    max-width:400px;
+    padding:30px 20px;
+}
+
+h1{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+h2{
+    font-size:24px;
+}
+
+h3{
+    font-size:20px;
+    line-height:1.6;
+}
+
+button{
+    font-size:16px;
+    padding:14px;
+    margin-top:12px;
+}
+
+}
